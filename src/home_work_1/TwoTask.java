@@ -15,7 +15,7 @@
 	2.8 6 - 2 > 3 && 12 * 12 <= 119
 	2.9 true && false
 */
-package Home_Work_1;
+package home_work_1;
 
 public class TwoTask {
     public static void main(String[] args) {

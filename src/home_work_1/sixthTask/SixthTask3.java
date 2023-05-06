@@ -1,7 +1,6 @@
 //6.3 Написать в отдельном классе main метод и в нём код который будет выполнять общее условие при помощи switch
-package Home_Work_1.SixthTask;
+package home_work_1.sixthTask;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class SixthTask3 {

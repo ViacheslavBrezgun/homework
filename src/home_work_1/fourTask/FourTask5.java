@@ -1,6 +1,6 @@
 //4.5 Буква или иной символ
 
-package Home_Work_1.FourTask;
+package home_work_1.fourTask;
 
 public class FourTask5 {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 //4.4 Перевести байты в килобайты или наоборот
-package Home_Work_1.FourTask;
+package home_work_1.fourTask;
 
 public class FourTask4 {
     public static void main(String[] args) {

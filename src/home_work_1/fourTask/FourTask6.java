@@ -1,6 +1,6 @@
 //4.6 Определить високосный год или нет
 
-package Home_Work_1.FourTask;
+package home_work_1.fourTask;
 
 public class FourTask6 {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 //4.1 Определить нечётное число
-package Home_Work_1.FourTask;
+package home_work_1.fourTask;
 
 public class FourTask1 {
 

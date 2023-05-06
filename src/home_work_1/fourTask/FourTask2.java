@@ -1,5 +1,5 @@
 // 4.2 Среди трёх чисел найти среднее
-package Home_Work_1.FourTask;
+package home_work_1.fourTask;
 public class FourTask2 {
     public static void main(String[] args) {
         int a =0, b=-6, c=2;

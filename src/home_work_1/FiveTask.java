@@ -1,4 +1,4 @@
-package Home_Work_1;
+package home_work_1;
 
 //5.* Создать СТАТИЧЕСКИЙ метод sleepIn рядом с методом main. (Взято с https://codingbat.com/prob/p187868).
 //	5.1 Данный метод будет принимает два параметра

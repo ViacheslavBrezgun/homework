@@ -13,7 +13,7 @@
 		switch
 	ВНИМАНИЕ! В примерах c if для сравнения имён использовать код вида Objects.equals("Имя1", "Имя2").
 */
-package Home_Work_1.SixthTask;
+package home_work_1.sixthTask;
 
 import java.util.Objects;
 import java.util.Scanner;

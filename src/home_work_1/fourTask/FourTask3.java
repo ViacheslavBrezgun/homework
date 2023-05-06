@@ -1,5 +1,5 @@
 // 4.3 Проверка делимости одного числа на другое
-package Home_Work_1.FourTask;
+package home_work_1.fourTask;
 public class FourTask3 {
     public static void main(String[] args) {
         int a = 0;
