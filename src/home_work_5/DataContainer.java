@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class DataContainer<T> {
     private T[] data;
     private T x;
-    int k = 0;
-    int i = 0;
+    private int k = 0;
+    private int i = 0;
 
     public DataContainer(T[] data) {
         this.data = data;
