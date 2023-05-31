@@ -1,6 +1,8 @@
-package home_work_3.runners.calcs.simple;
+package home_work_3.calcs.simple;
 
-public class CalculatorWithMathCopy {
+import home_work_3.calcs.api.ICalculator;
+
+public class CalculatorWithMathCopy implements ICalculator {
     /**
      * умножение
      */
@@ -23,4 +25,16 @@ public class CalculatorWithMathCopy {
 
         return res ;
     }
+    public double stepan(double a, double b) {
+        return Math.pow(a,b);
+    }
+    public double modul(double a){
+
+       return  Math.abs(a);
+    }
+    public double koren(double a){
+        Math.sqrt(a);
+        return a;
+    }
+
 }

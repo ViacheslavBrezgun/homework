@@ -31,7 +31,7 @@ public class FiveTask {
         }
     }
 
-    private static boolean sleepin(boolean weekday, boolean vacation) {
+    public static boolean sleepin(boolean weekday, boolean vacation) {
         if (!weekday || vacation) {
             return true;
         } else {

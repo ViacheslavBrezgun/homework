@@ -4,12 +4,23 @@ public class FourTask3 {
     public static void main(String[] args) {
         int a = 0;
         int b = 3;
+//        if (a == 0) {
+//            System.out.println("на ноль делить нельзя");
+//        } else if (b % a != 0) {
+//            System.out.println("не делится, результат");
+//        } else {
+//            System.out.println("делится,результат: " + (b / a));
+//        }
+    }
+    public  boolean delit(int a,int b){
+        boolean t=false;
         if (a == 0) {
-            System.out.println("на ноль делить нельзя");
+            t=false;
         } else if (b % a != 0) {
-            System.out.println("не делится, результат");
+            t=false;
         } else {
-            System.out.println("делится,результат: " + (b / a));
+            t=true;
         }
+        return t;
     }
 }

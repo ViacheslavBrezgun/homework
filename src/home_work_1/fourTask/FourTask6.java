@@ -14,10 +14,20 @@ public class FourTask6 {
 //        } else {
 //            System.out.println("Високосный год");
 //        }
-        if ((year % 4 != 0) || (year % 100 == 0)) {
-            System.out.println("не високосный");
+//        if ((year % 4 != 0) || (year % 100 == 0)) {
+//            System.out.println("не високосный");
+//        } else {
+//            System.out.println("Високосный год");
+//        }
+        System.out.println(visikosniy(1764));
+    }
+    public static boolean visikosniy(int god){
+        boolean res;
+        if ((god % 4 != 0) || (god % 100 == 0)) {
+           res=false;
         } else {
-            System.out.println("Високосный год");
+            res=true;
         }
+        return res;
     }
 }

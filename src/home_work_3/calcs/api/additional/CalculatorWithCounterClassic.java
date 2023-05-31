@@ -1,6 +1,6 @@
-package home_work_3.runners.calcs.additional;
+package home_work_3.calcs.api.additional;
 
-import home_work_3.runners.calcs.simple.CalculatorWithMathExtends;
+import home_work_3.calcs.simple.CalculatorWithMathExtends;
 
 public class CalculatorWithCounterClassic extends CalculatorWithMathExtends {
     int operation=0;

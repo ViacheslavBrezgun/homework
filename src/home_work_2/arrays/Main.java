@@ -12,7 +12,7 @@ public class Main {
 //        System.out.println("\nallElements");
 //        ArraysIteration.AllElements();
 //        System.out.println("\nALLtwoElements");
-//
+
 //        ArraysIteration.AllTwoElements();
 //        int[] container = ArrayUtils.arrayRandom(5, 100);
 //        for (int i = 0; i < container.length; i++) {
@@ -20,15 +20,16 @@ public class Main {
 //        }
 //        System.out.println("\nAllReverseElements");
 
-        ArraysIteration.AllReverseElements();
-
-        System.out.println("\nsumChetPol");
-        ArraysOperations.sumChetPOL();
-        System.out.println("\nmax");
-        ArraysOperations.maxChetIndx();
-        ArraysOperations.MinMin();
-        ArraysOperations.Compression();
-        ArraysOperations.SumNum();
-        ArraysOperations.smallerArithmeticAverages();
+//        ArraysIteration.AllReverseElements();
+        int []arr= {1,2,3,4,5,6};
+        System.out.println(ArraysOperations.Compression(arr)+"y");
+//        System.out.println("\nsumChetPol");
+//        ArraysOperations.sumChetPOL();
+//        System.out.println("\nmax");
+//        ArraysOperations.maxChetIndx()/;
+//        ArraysOperations.MinMin()/;
+//        ArraysOperations.Compression();
+//        ArraysOperations.SumNum();
+//        ArraysOperations.smallerArithmeticAverages();
     }
 }

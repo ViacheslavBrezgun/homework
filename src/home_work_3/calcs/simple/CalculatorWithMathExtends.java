@@ -1,8 +1,8 @@
-package home_work_3.runners.calcs.simple;
+package home_work_3.calcs.simple;
 
-import home_work_3.runners.calcs.additional.CalculatorWithCounterClassic;
+import home_work_3.calcs.api.ICalculator;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator {
+public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator {
     @Override
     public double division(double a, double b) {
         return super.division(a, b);
@@ -25,22 +25,16 @@ public class CalculatorWithMathExtends extends CalculatorWithOperator {
 
     @Override
     public double stepan(double a, double b) {
-
         return Math.pow(a,b);
-
     }
 
     @Override
     public double modul(double a) {
-
         return Math.abs(a);
-
     }
 
     @Override
     public double koren(double a) {
-
         return  Math.sqrt(a);
-
     }
 }

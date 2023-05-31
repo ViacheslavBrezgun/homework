@@ -25,16 +25,21 @@ public class SixthTask1 {
         String name = sc.nextLine();
         answer(name);
     }
-    private static String answer(String name1) {
+    public static String answer(String name1) {
         if (Objects.equals(name1, "Вася")) {
-            System.out.println("Привет!\nЯ тебя так долго ждал");
-        } else {
-            // System.out.println("Добрый день, а вы кто?");
+           // System.out.println("Привет!\nЯ тебя так долго ждал");
+            name1="Привет!\nЯ тебя так долго ждал";
         }
-        if (Objects.equals(name1, "Анастасия")) {
-            System.out.println("Я тебя так долго ждал");
+//         else {
+//            // System.out.println("Добрый день, а вы кто?");
+////        }
+       else if (Objects.equals(name1, "Анастасия")) {
+//            System.out.println("Я тебя так долго ждал");
+            name1="Я тебя так долго ждал";
+
         } else {
-            System.out.println("Добрый день, а вы кто?");
+//            System.out.println("Добрый день, а вы кто?");
+            name1="Добрый день, а вы кто?";
         }
         return name1;
     }

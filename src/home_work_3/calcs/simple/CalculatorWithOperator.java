@@ -1,6 +1,8 @@
-package home_work_3.runners.calcs.simple;
+package home_work_3.calcs.simple;
 
-public class CalculatorWithOperator {
+import home_work_3.calcs.api.ICalculator;
+
+public class CalculatorWithOperator implements ICalculator {
 
     public double division(double a, double b) {
         double res = a / b;
@@ -25,9 +27,9 @@ public class CalculatorWithOperator {
         return res;
     }
 
-    public double stepan(double a, double b) {
+    public double stepan(double a, double b) {///////int b
     double res=1;
-        for (int i = 0; i < b; i++) {
+        for (int i = 0; i < b; i++) {////////////int i =1;
             res=res*a;
         }
         return res;
@@ -40,6 +42,7 @@ public class CalculatorWithOperator {
             res=a;
         }
         return res;
+        ///////////////////////////////////return a<0?-a:a;
     }
     public double koren(double a){
         Math.sqrt(a);

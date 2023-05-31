@@ -1,4 +1,6 @@
-package home_work_3.calcs.simple;
+package home_work_3.runners;
+
+import home_work_3.calcs.simple.CalculatorWithMathExtends;
 
 public class CalculatorWithMathExtendsMain {
     public static void main(String[] args) {
