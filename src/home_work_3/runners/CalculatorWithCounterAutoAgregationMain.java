@@ -1,6 +1,6 @@
 package home_work_3.runners;
 
-import home_work_3.calcs.api.additional.CalculatorWithCounterAutoAgregation;
+import home_work_3.calcs.additional.CalculatorWithCounterAutoAgregation;
 import home_work_3.calcs.simple.CalculatorWithOperator;
 
 public class CalculatorWithCounterAutoAgregationMain {

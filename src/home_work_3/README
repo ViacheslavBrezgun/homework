@@ -1,3 +1,28 @@
+
+WithoutCalculatorMain - задание 1;
+CalculatorWithOperator / CalculatorWithOperatorMain - задание 2;
+CalculatorWithMathCopy / CalculatorWithMathCopyMain - задание 3;
+CalculatorWithMathExtends / CalculatorWithMathExtendsMain - задание 4;
+CalculatorWithCounterClassic / CalculatorWithCounterClassicMain  - задание 5;
+CalculatorWithCounterAutoSuper / CalculatorWithCounterAutoSuperMain  - задание 6;
+CalculatorWithCounterAutoComposite / CalculatorWithCounterDelegateCompositeMain - задание 7;
+CalculatorWithCounterAutoAgregation / CalculatorWithCounterDelegateAgregationMain  - задание 8;
+CalculatorWithCounterAutoChoiceAgregation / CalculatorWithCounterDelegateChoiceAgregationMain - задание 9;
+ICalculator - задание 10;
+CalculatorWithCounterAutoAgregationInterface / CalculatorWithCounterAutoCompositeInterfaceMain - задание 11;
+
+
+
+
+
+
+
+
+
+
+
+
+
 Изучаем: return, инкапсуляцию, наследование, переоределение, интефрейсы, композицию, делегирование, циклы, Math, операторы ветвления, паттерны*.
 
 Суть задания:

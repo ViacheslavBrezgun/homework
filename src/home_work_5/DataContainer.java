@@ -52,7 +52,7 @@ public class DataContainer<T> {
 /**
  * РАСШИРЕНИЕ МАСИВА
  */
-//не могу придумать условие----------------------------------------------------------------------------------------
+
         T[] data2 = Arrays.copyOf(data, data.length + 1);
         data2[data2.length - 1] = item;
         k = data2.length - 1;
