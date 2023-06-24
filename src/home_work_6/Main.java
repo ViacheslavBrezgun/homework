@@ -1,58 +1,47 @@
+// 2.1.Найти в тексте все использованные слова и поместить в Set при помощи регулярных выражений
 package home_work_6;
 
-import java.util.Random;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.*;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person(randomStringRus(),randomString(),nameRandom());
-        System.out.println(" персон "+ person.toString());
 
-        Animal animal = new Animal(10,klRandom());
-        System.out.println(" питомец "+ animal.toString());
+        String fileName = "src/Война и мир.txt";
+        // читаем файл в строку с помощью класса Files
+        try {
+            String contents = readUsingFiles(fileName).trim();
+            Set<String> set = new HashSet();
+            Pattern pattern = Pattern.compile("([\\s+\\d-.();,!?:=\"]+)");
+            String[] arr = pattern.split(contents);
+            System.out.println("МАссив");
 
-    }
-    public static String randomStringRus() {
-        int leftLimit1 = 224; // буква 'a'
-        int rightLimit1 = 255; // буква 'z'
-        int stringLength1 = 10;
-        Random random = new Random();
-        StringBuilder buffer = new StringBuilder(stringLength1);
-        for (int i = 0; i < stringLength1; i++) {
-            int randomLimitedInt = leftLimit1 + (int)
-                    (random.nextFloat() * (rightLimit1 - leftLimit1 + 1));
-            buffer.append((char) randomLimitedInt);
+            for (String s : arr) {
+                set.add(s.toLowerCase(Locale.ROOT));
+                System.out.println(s);
+            }
+            Iterator<String> iterator=set.iterator();
+            System.out.println("КОЛЛЕКЦИЯ");
+            System.out.println("___________________________________");
+            while (iterator.hasNext()) {
+                System.out.println(iterator.next());
+
+            }
+            System.out.println("Количество слов в коллекции set: " + set.size());
+
+        } catch (IOException e) {
+            System.out.println("No files");
         }
-        String generatedString = buffer.toString();
-        return generatedString;
 
     }
 
-    public static String randomString() {
-        int leftLimit = 97; // буква 'a'
-        int rightLimit = 122; // буква 'z'
-        int stringLength = 10;
-        Random random = new Random();
-        StringBuilder buffer = new StringBuilder(stringLength);
-        for (int i = 0; i < stringLength; i++) {
-            int randomLimitedInt = leftLimit + (int)
-                    (random.nextFloat() * (rightLimit - leftLimit + 1));
-            buffer.append((char) randomLimitedInt);
-        }
-        String generatedString = buffer.toString();
-        return generatedString;
-
+    private static String readUsingFiles(String fileName) throws IOException {
+        return new String(Files.readAllBytes(Paths.get(fileName)));
     }
 
-    public static Names nameRandom() {
-        Names[] masName = Names.values();
-        int n = (int) Math.floor(Math.random() * masName.length);
-        return masName[n];
-    }
-
-    public static Klichka klRandom() {
-        Klichka[] klName1 = Klichka.values();
-        int n = (int) Math.floor(Math.random() * klName1.length);
-        return klName1[n];
-
-    }
 }
+
