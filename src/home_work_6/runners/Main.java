@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
 
-        String fileName = "src/Война и мир.txt";
+        String fileName = "C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\source\\Война и мир.txt";
         // читаем файл в строку с помощью класса Files
         try {
             String contents = readUsingFiles(fileName).trim();
@@ -39,6 +39,12 @@ public class Main {
 
     }
 
+    /**
+     * считавает из файла текст и преобразует в строку
+     * @param fileName файл
+     * @return возвращает строку
+     * @throws IOException пробрасывает обработку исключения в вызываемый метод
+     */
     private static String readUsingFiles(String fileName) throws IOException {
         return new String(Files.readAllBytes(Paths.get(fileName)));
     }

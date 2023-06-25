@@ -1,9 +1,19 @@
 package home_work_6;
 
+import home_work_6.api.ISearchEngine;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RegExSearch implements ISearchEngine{
+public class RegExSearch implements ISearchEngine {
+
+
+    /**
+     * поиск при помощи класса Matcher
+     * @param text текст в котором осуществляем поиск
+     * @param word искомое слово
+     * @return количество раз
+     */
     @Override
     public long search(String text, String word) {
         int poz = 0;

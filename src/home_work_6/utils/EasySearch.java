@@ -1,9 +1,18 @@
-//3.1 Поиск используя метод IndexOf
+
 package home_work_6;
 
-public class EasySearch implements ISearchEngine {
-    @Override
+import home_work_6.api.ISearchEngine;
 
+public class EasySearch implements ISearchEngine {
+
+
+    /**
+     * Поиск используя метод IndexOf
+     * @param text текст в котором осуществляем поиск
+     * @param word искомое слово
+     * @return количество раз
+     */
+    @Override
     public long search(String text, String word) {
         int poz = 0;
         int count = 0;

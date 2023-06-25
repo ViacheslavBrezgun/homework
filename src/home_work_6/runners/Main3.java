@@ -9,12 +9,15 @@
 
 package home_work_6;
 
+import home_work_6.api.ISearchEngine;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
 public class Main3 {
+
     @Override
     public int hashCode() {
         return super.hashCode();
@@ -34,7 +37,7 @@ public class Main3 {
         int count = 1;
         int count2 = 0;
         try {
-            BufferedReader text = new BufferedReader(new FileReader("src/Война и мир.txt")); // чтение текста с файла
+            BufferedReader text = new BufferedReader(new FileReader("C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\source\\Война и мир.txt")); // чтение текста с файла
             String st = "";
             String st1 = "";
             while ((st = text.readLine()) != null) { //проверяем построчно есть ли заполненная строка теста и сохраняем эту строку в st
@@ -81,7 +84,7 @@ public class Main3 {
         StringBuilder st1 = returnText();
         long number1 = regExSearch.search(st1.toString(), "Начало");
 
-        //Декоратор
+        //Декоратор 4.3
 
         ISearchEngine punctuationNormalizer = new SearchEnginePunctuationNormalizer(new EasySearch());
         System.out.println("decorator");
@@ -94,7 +97,7 @@ public class Main3 {
     public static StringBuilder returnText() {
         StringBuilder st = new StringBuilder();
         try {
-            BufferedReader text2 = new BufferedReader(new FileReader("src/Война и мир.txt")); // чтение текста с файла
+            BufferedReader text2 = new BufferedReader(new FileReader("C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\source\\Война и мир.txt")); // чтение текста с файла
 
             while ((text2.readLine()) != null) {
                 st.append(text2.readLine());
