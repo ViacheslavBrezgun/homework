@@ -13,7 +13,7 @@ public class Main4 {
     }
     private static void menuBook() throws IOException {
 
-        File file = new File("src" + File.separator + "source"); // обращение к файлу
+        File file = new File( "C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\home_work_6\\source"); // обращение к файлу
 //        if (file.exists() && file.isDirectory()) {
 //            System.out.println("файл есть");
 //        }
@@ -40,6 +40,10 @@ public class Main4 {
             break;
             case "3": {
                 generateBooks(file.getPath() + "\\book3.txt");
+            }
+            break;
+            case "4": {
+                generateBooks(file.getPath() + "\\Война и мир.txt");
             }
             case "0": {
                 System.out.println("Выход");
