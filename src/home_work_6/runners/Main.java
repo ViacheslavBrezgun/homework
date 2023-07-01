@@ -1,5 +1,5 @@
 // 2.1.Найти в тексте все использованные слова и поместить в Set при помощи регулярных выражений
-package home_work_6;
+package home_work_6.runners;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
 
-        String fileName = "C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\source\\Война и мир.txt";
+        String fileName = "C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\home_work_6\\source\\Война и мир.txt";
         // читаем файл в строку с помощью класса Files
         try {
             String contents = readUsingFiles(fileName).trim();
@@ -24,7 +24,7 @@ public class Main {
                 set.add(s.toLowerCase(Locale.ROOT));
                 System.out.println(s);
             }
-            Iterator<String> iterator=set.iterator();
+            Iterator<String> iterator = set.iterator();
             System.out.println("КОЛЛЕКЦИЯ");
             System.out.println("___________________________________");
             while (iterator.hasNext()) {
@@ -41,6 +41,7 @@ public class Main {
 
     /**
      * считавает из файла текст и преобразует в строку
+     *
      * @param fileName файл
      * @return возвращает строку
      * @throws IOException пробрасывает обработку исключения в вызываемый метод
