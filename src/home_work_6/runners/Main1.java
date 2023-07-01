@@ -15,7 +15,7 @@ public class Main1 {
     public static void main(String[] args) {
         Set<String> set = new HashSet<String>();
         try {
-            BufferedReader text = new BufferedReader(new FileReader("C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\home_work_6\\source\\Война и мир.txt")); // чтение текста с файла
+            BufferedReader text = new BufferedReader(new FileReader("src\\home_work_6\\source\\Война и мир.txt")); // чтение текста с файла
             String st = "";
             while ((st = text.readLine()) != null) { //проверяем построчно есть ли заполненная строка теста и сохраняем эту строку в st
                 StringTokenizer tokenizer = new StringTokenizer(st, "1234567890 .!?(){}[]<>#*,:;-\'\"/"); //раскладывает строку на части - слова по делиметру

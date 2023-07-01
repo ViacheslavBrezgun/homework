@@ -13,7 +13,7 @@ public class Main4 {
     }
     private static void menuBook() throws IOException {
 
-        File file = new File( "C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\home_work_6\\source"); // обращение к файлу
+        File file = new File( "src\\home_work_6\\source"); // обращение к файлу
 //        if (file.exists() && file.isDirectory()) {
 //            System.out.println("файл есть");
 //        }

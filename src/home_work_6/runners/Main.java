@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
 
-        String fileName = "C:\\Users\\intel i7\\IdeaProjects\\JD1\\HomeWork\\src\\home_work_6\\source\\Война и мир.txt";
+        String fileName = "src\\home_work_6\\source\\Война и мир.txt";
         // читаем файл в строку с помощью класса Files
         try {
             String contents = readUsingFiles(fileName).trim();
