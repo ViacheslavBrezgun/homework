@@ -1,10 +1,13 @@
-package home_work_3.calcs.api.additional;
+package home_work_3.calcs.additional;
 
-import home_work_3.calcs.simple.CalculatorWithMathCopy;
 import home_work_3.calcs.simple.CalculatorWithOperator;
 
-public class CalculatorWithCounterAutoComposite {
-    CalculatorWithOperator copy = new CalculatorWithOperator();
+public class CalculatorWithCounterAutoAgregation {
+    CalculatorWithOperator operator;
+
+    public CalculatorWithCounterAutoAgregation(CalculatorWithOperator operator){
+        this.operator=operator;
+    }
     private long count=0;
     public long getOperation(){
         return count;
@@ -12,36 +15,32 @@ public class CalculatorWithCounterAutoComposite {
 
     public double division(double a,double b) {
         count++;
-        return  copy.division(a, b);
+        return  operator.division(a, b);
 
     }
     public double addition(double a,double b){
         count++;
 
-        return  copy.addition(a,b);
+        return  operator.addition(a,b);
     }public double multiplication(double a,double b){
         count++;
 
-        return  copy.multiplication(a,b);
+        return  operator.multiplication(a,b);
     }public double subtraction(double a,double b){
         count++;
 
-        return  copy.subtraction(a,b);
+        return  operator.subtraction(a,b);
     }public double koren(double a){
         count++;
 
-        return  copy.koren(a);
+        return  operator.koren(a);
     }public double stepan(double a,double b){
         count++;
 
-        return  copy.stepan(a,b);
+        return  operator.stepan(a,b);
     }public double modul(double a){
         count++;
 
-        return  copy.modul(a);
+        return  operator.modul(a);
     }
-
-
-
-
 }
